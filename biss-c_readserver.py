@@ -291,7 +291,7 @@ class BISSCREAD_Server(DeviceServer):
         returnValue(arrfl)
     
     @setting(510,mm = 'v[]',returns='s')
-    def setZeroHere(self, c, mm):
+    def setZeroAt(self, c, mm):
         """
         Calibrates the given mm as the zero position for the dac voltage
         """
